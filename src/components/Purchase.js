@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./styles/Purchase.css";
 import database from "./FirebaseDB";
 import { ref, set } from "firebase/database";

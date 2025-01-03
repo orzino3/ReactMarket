@@ -26,7 +26,7 @@ function Header() {
         </div>
       </div>
       <div className="marquee-container">
-        <marquee className="site-desc">Welcome to the REACT Market!</marquee>
+        <div className="site-desc">Welcome to the REACT Market!</div>
       </div>
 
       <div className="button-container">
