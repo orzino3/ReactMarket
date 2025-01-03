@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles/Purchase.css";
 import database from "./FirebaseDB";
 import { ref, set } from "firebase/database";
-import { sanitizeProductName, hashString } from "../utils/Utils";
+import { formatProductName } from "../utils/Utils";
 
 function Purchase(props) {
   const addToCart = (event) => {
@@ -13,9 +13,9 @@ function Purchase(props) {
     };
 
     const uniqueKey = productObject.title;
-    const sanitizedUniqueKey = sanitizeProductName(uniqueKey);
+    const formattedKey = formatProductName(uniqueKey);
 
-    set(ref(database, "Products/" + sanitizedUniqueKey), productObject)
+    set(ref(database, "Products/" + formattedKey), productObject)
       .then(() => {
         console.log("Data sent successfully!");
       })

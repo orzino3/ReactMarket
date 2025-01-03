@@ -1,15 +1,15 @@
 import "./styles/Product.css";
 import { getDatabase, ref, remove } from "firebase/database";
 import { useState } from "react";
-import { sanitizeProductName, hashString } from "../utils/Utils";
+import { formatProductName } from "../utils/Utils";
 
 function CartItem(props) {
   const [deleteItems, setDeleteItems] = useState(false);
 
   const removeSpecificItem = async (uniqueKey) => {
-    const sanitizedKey = sanitizeProductName(uniqueKey);
+    const formattedKey = formatProductName(uniqueKey);
     const db = await getDatabase();
-    const dbRef = ref(db, "Products/" + sanitizedKey);
+    const dbRef = ref(db, "Products/" + formattedKey);
 
     remove(dbRef)
       .then(() => {

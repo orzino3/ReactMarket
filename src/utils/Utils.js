@@ -1,10 +1,10 @@
-export const sanitizeProductName = (name) => {
-  let sanitizedName = name
+export const formatProductName = (name) => {
+  let formattedName = name
     .replace(/[.#$[\]]/g, "_")
     .replace(/\s+/g, "-")
     .replace(/^[-_]+|[-_]+$/g, "");
 
-  const hash = hashString(sanitizedName);
+  const hash = hashString(formattedName);
 
   return hash;
 };
