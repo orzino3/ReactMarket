@@ -19,18 +19,10 @@
     font-weight: bold;
 }
 
-
-
-.search-bar:focus {
-    border-color: #ff0051;
-    
+.buy{
+    margin: 10px;
 }
 
-.search-bar::placeholder {
-    color: #aaa;
-    font-style: italic;
-}
-
-.search-bar:hover {
-    border-color: #555;
+.buy:disabled {
+    background-color: #ccc;
 }

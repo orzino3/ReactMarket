@@ -66,6 +66,9 @@ function CartPage() {
         >
           <i class="fa-solid fa-trash-can">Reset Cart</i>
         </button>
+        <button className="btn btn-success buy" disabled>
+          Purchase
+        </button>
       </div>
       <div className="items-container">
         {cartItems.map((item, index) => (
