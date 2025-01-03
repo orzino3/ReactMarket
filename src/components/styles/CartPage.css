@@ -1,0 +1,36 @@
+.cart-info-container {
+    display: grid;
+    grid-template-rows: auto;
+    
+}
+
+.cart-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cart-total{
+    font-size: 20px;
+
+}
+
+.cart-total .to-pay{
+    color: #216c8b;
+    font-weight: bold;
+}
+
+
+
+.search-bar:focus {
+    border-color: #ff0051;
+    
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-bar:hover {
+    border-color: #555;
+}

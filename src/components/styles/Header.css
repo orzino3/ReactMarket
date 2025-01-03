@@ -1,0 +1,46 @@
+.header-container{
+    background-color: lightblue;
+    height: 120px;
+    position: sticky;
+    top: 0; /* Ensures it sticks to the top */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Space between logo+desc and buttons */
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-name{
+margin-left: 20px;
+font-size: 60px;
+
+}
+
+.site-desc{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+.rLogo{
+    height: 60px;
+    width: 60px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 15px;
+}
+
+.marquee-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.button-container .btn:hover {
+    background-color: #30355d;
+}

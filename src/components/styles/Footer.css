@@ -1,0 +1,20 @@
+/* Footer styles */
+.footer-container{
+    background-color: lightblue;
+    height: 75px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.copyright{
+    font-size: 30px;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 120px; 
+}
