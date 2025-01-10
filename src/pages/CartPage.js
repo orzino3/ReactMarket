@@ -36,6 +36,10 @@ function CartPage() {
     fetchDataFromFirebase();
   }, [deleteItems]);
 
+  useEffect(() => {
+    window.location.reload();
+  }, [cartItems]);
+
   const deleteItemsInCart = async () => {
     const db = await getDatabase();
     const dbRef = ref(db, "Products");

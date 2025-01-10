@@ -30,6 +30,7 @@ export default function Sorter({ products, setFilteredProducts }) {
         min={minPrice}
         max={maxPrice}
         value={selectedPrice}
+        step={0.01}
         onChange={(e) => setSelectedPrice(Number(e.target.value))}
       />
       <span className="highest-price">${maxPrice}</span>
